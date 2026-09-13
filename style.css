@@ -30,6 +30,7 @@ body{
 grid-area: box1;
 padding: 30px 20px;
 border-top: 1px solid rgba(255,255,255,0.15);
+flex: 1;
 }
 .heading{
     color: white;
@@ -37,29 +38,37 @@ border-top: 1px solid rgba(255,255,255,0.15);
 .subheading{
     color: rgba(255,255,255,0.7);
 }
+.hero{
+    display: flex;
+    flex-direction: column;
+}
 .stat1{  
 color: white;
 padding: 20px;
 border-top: 1px solid rgba(255,255,255,0.15);
 grid-area: box2;
+flex: 1;
 }
 .stat2{
 color: white;
 padding: 20px;
 border-top: 1px solid rgba(255,255,255,0.15);
 grid-area: box3;
+flex: 1;
 }
 .stat3{  
 color: white;
 padding: 20px;
 border-top: 1px solid rgba(255,255,255,0.15);
 grid-area: box4;
+flex: 1;
 }
 .stat4{        
 color: white;
 padding: 20px;
 border-top: 1px solid rgba(255,255,255,0.15);
 grid-area: box5;
+flex: 1;
 }
 .stat-number{
     font-weight: 500;
@@ -92,6 +101,9 @@ footer{
     color: white;
 }
 @media(min-width: 600px){
+    body{
+    height: 100vh;
+    }
     .hero{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
